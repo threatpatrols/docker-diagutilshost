@@ -1,3 +1,4 @@
+
 FROM ubuntu:jammy-20221130@sha256:965fbcae990b0467ed5657caceaec165018ef44a4d2d46c7cdea80a9dff0d1ea
 
 LABEL maintainer="Nicholas de Jong <ndejong@threatpatrols.com>"
@@ -36,11 +37,5 @@ RUN set -x \
         telnet \
         traceroute \
         vim
-
-#        python3 \
-#        software-properties-common \
-#        dstat \
-#        gnupg \
-
 
 CMD [ "/bin/bash" ]
