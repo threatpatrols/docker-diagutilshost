@@ -27,11 +27,6 @@ Image based on Ubuntu Jammy (22.04)
 * `traceroute` - network trace
 * `vim` - vi improved
 
-## Docker
-```commandline
-docker pull threatpatrols/diagutilshost
-```
-
 ## Docker Hub
 * https://hub.docker.com/r/threatpatrols/diagutilshost
 
