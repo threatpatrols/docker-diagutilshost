@@ -1,11 +1,11 @@
 
-image: docker:20.10.21
+image: docker:20.10.22
 
 variables:
   RUNNER_INFRASTRUCTURE: "shared"
 
 services:
-  - name: docker:20.10.21-dind
+  - name: docker:20.10.22-dind
     alias: docker
 
 sast:
@@ -45,7 +45,7 @@ build_tagged:
   stage: build
 
   rules:
-    - if: $CI_COMMIT_TAG =~ /^(\d+\.)?(\d+\.)?(\*|\d+)(\+.*?)?$/
+    - if: $CI_COMMIT_TAG =~ /^v?(\d+\.)?(\d+\.)?(\*|\d+)(\+.*?)?$/
 
   tags:
     - docker
