@@ -1,6 +1,6 @@
 
 # https://hub.docker.com/_/ubuntu/tags
-FROM ubuntu:22.04@sha256:c985bc3f77946b8e92c9a3648c6f31751a7dd972e06604785e47303f4ad47c4c
+FROM ubuntu:22.04
 
 LABEL maintainer="Nicholas de Jong <ndejong@threatpatrols.com>"
 
