@@ -16,12 +16,15 @@ Image based on Ubuntu Jammy (22.04)
 * `jq` - json parser and query tool
 * `lsof` - list open files
 * `kubectl` - cli for controlling a Kubernetes cluster
+* `mysql-client` - client for MySQL
 * `net-tools` - netstat, ipconfig, arp and others
 * `netcat` - the network swiss army knife
 * `nmap` - network exploration tool and security / port scanner
 * `openssh-client` - client for SSH connections
 * `openssl` - OpenSSL command line tool
+* `postgresql-client` - client for PostgreSQL
 * `psmisc` - process management tools
+* `redis-tools` - redis-client cli tools for redis-server
 * `strace` - trace system calls and signals
 * `sudo` - execute a command as another user
 * `tcpdump` - review and examine traffic on a network

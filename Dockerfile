@@ -30,12 +30,15 @@ RUN set -x \
         jq \
         man \
         man-db \
+        mysql-client \
         net-tools \
         netcat \
         nmap \
         openssh-client \
         openssl \
         psmisc \
+        postgresql-client \
+        redis-tools \
         strace \
         sudo \
         lsof \
