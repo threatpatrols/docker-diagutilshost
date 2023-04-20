@@ -4,6 +4,9 @@ FROM ubuntu:22.04
 
 LABEL maintainer="Nicholas de Jong <ndejong@threatpatrols.com>"
 
+# https://storage.googleapis.com/kubernetes-release/release/stable.txt
+ARG KUBERNETES_RELEASE="v1.27.1"
+
 ARG COMMIT_REF="${COMMIT_REF}"
 LABEL COMMIT_REF="${COMMIT_REF}"
 
@@ -34,11 +37,14 @@ RUN set -x \
         openssl \
         psmisc \
         strace \
+        sudo \
         lsof \
         tcpdump \
         telnet \
         traceroute \
-        vim
+        vim \
+    && curl -L "https://dl.k8s.io/release/${KUBERNETES_RELEASE}/bin/linux/amd64/kubectl" -o /usr/local/bin/kubectl \
+    && chmod 755 /usr/local/bin/kubectl
 
 RUN set -x \
   && export DEBIAN_FRONTEND=noninteractive \
