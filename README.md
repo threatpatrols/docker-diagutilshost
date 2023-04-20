@@ -15,6 +15,7 @@ Image based on Ubuntu Jammy (22.04)
 * `iputils-ping` - ping4 and ping6
 * `jq` - json parser and query tool
 * `lsof` - list open files
+* `kubectl` - cli for controlling a Kubernetes cluster
 * `net-tools` - netstat, ipconfig, arp and others
 * `netcat` - the network swiss army knife
 * `nmap` - network exploration tool and security / port scanner
@@ -22,6 +23,7 @@ Image based on Ubuntu Jammy (22.04)
 * `openssl` - OpenSSL command line tool
 * `psmisc` - process management tools
 * `strace` - trace system calls and signals
+* `sudo` - execute a command as another user
 * `tcpdump` - review and examine traffic on a network
 * `telnet` - client for plain old telnet connections
 * `traceroute` - network trace
@@ -36,4 +38,4 @@ Image based on Ubuntu Jammy (22.04)
 * https://github.com/threatpatrols/docker-diagutilshost
 
 ## Copyright
-* Copyright (c) 2022 Nicholas de Jong <ndejong@threatpatrols.com>
+* Copyright (c) 2022-2023 Nicholas de Jong <ndejong@threatpatrols.com>
