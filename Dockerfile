@@ -45,6 +45,7 @@ RUN set -x \
         tcpdump \
         telnet \
         traceroute \
+        wget \
         vim \
     && curl -L "https://dl.k8s.io/release/${KUBERNETES_RELEASE}/bin/linux/amd64/kubectl" -o /usr/local/bin/kubectl \
     && chmod 755 /usr/local/bin/kubectl
