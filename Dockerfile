@@ -5,7 +5,7 @@ FROM ubuntu:22.04
 LABEL maintainer="Nicholas de Jong <ndejong@threatpatrols.com>"
 
 # https://storage.googleapis.com/kubernetes-release/release/stable.txt
-ARG KUBERNETES_RELEASE="v1.27.5"
+ARG KUBERNETES_RELEASE="v1.28.2"
 
 ARG COMMIT_REF="${COMMIT_REF}"
 LABEL COMMIT_REF="${COMMIT_REF}"
