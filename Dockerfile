@@ -66,4 +66,8 @@ RUN set -x \
     && curl -L "https://dl.k8s.io/release/${KUBERNETES_RELEASE}/bin/linux/amd64/kubectl" -o /usr/local/bin/kubectl \
     && chmod 755 /usr/local/bin/kubectl
 
+RUN set -x \
+    && cp /etc/skel/.bash_* /root/ \
+    && cp /etc/skel/.profile /root/
+
 CMD [ "/bin/bash" ]
