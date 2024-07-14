@@ -7,7 +7,7 @@ LABEL maintainer="Nicholas de Jong <ndejong@threatpatrols.com>"
 LABEL source="https://github.com/threatpatrols/docker-diagutilshost"
 
 # https://storage.googleapis.com/kubernetes-release/release/stable.txt
-ARG KUBERNETES_RELEASE="v1.30.0"
+ARG KUBERNETES_RELEASE="v1.30.2"
 
 ARG COMMIT_REF="${COMMIT_REF}"
 LABEL COMMIT_REF="${COMMIT_REF}"
