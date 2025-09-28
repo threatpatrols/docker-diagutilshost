@@ -1,6 +1,6 @@
 
 # https://hub.docker.com/_/ubuntu/tags
-FROM ubuntu:24.04
+FROM ubuntu:24.10
 
 # Hello
 LABEL maintainer="Nicholas de Jong <ndejong@threatpatrols.com>"
