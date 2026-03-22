@@ -7,7 +7,7 @@ LABEL maintainer="Nicholas de Jong <ndejong@threatpatrols.com>"
 LABEL source="https://github.com/threatpatrols/docker-diagutilshost"
 
 # https://storage.googleapis.com/kubernetes-release/release/stable.txt
-ARG KUBERNETES_RELEASE="v1.30.2"
+# ARG KUBERNETES_RELEASE="v1.30.2"
 
 ARG COMMIT_REF="${COMMIT_REF}"
 LABEL COMMIT_REF="${COMMIT_REF}"
@@ -62,9 +62,9 @@ RUN set -x \
     && apt-get autoremove -y \
     && rm -rf /var/lib/apt/lists/*
 
-RUN set -x \
-    && curl -L "https://dl.k8s.io/release/${KUBERNETES_RELEASE}/bin/linux/amd64/kubectl" -o /usr/local/bin/kubectl \
-    && chmod 755 /usr/local/bin/kubectl
+#RUN set -x \
+#    && curl -L "https://dl.k8s.io/release/${KUBERNETES_RELEASE}/bin/linux/amd64/kubectl" -o /usr/local/bin/kubectl \
+#    && chmod 755 /usr/local/bin/kubectl
 
 RUN set -x \
     && cp /etc/skel/.bash_* /root/ \
